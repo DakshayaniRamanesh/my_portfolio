@@ -1,0 +1,153 @@
+.contact {
+    background-color: var(--bg-color);
+}
+
+.sectionTitle {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 4rem;
+    position: relative;
+}
+
+.sectionTitle::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50px;
+    height: 4px;
+    background-color: var(--accent-color);
+}
+
+.contactWrapper {
+    display: grid;
+    grid-template-columns: 1fr 1.2fr;
+    gap: 5rem;
+    align-items: start;
+}
+
+.contactInfo h3 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+.contactInfo p {
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+}
+
+.contactDetails p {
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+}
+
+.contactDetails span {
+    color: var(--accent-color);
+    font-weight: 600;
+    margin-right: 0.5rem;
+}
+
+.contactForm {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.contactForm input,
+.contactForm textarea {
+    background: rgba(30, 41, 59, 0.4);
+    border: 1px solid rgba(100, 116, 139, 0.2);
+    padding: 1rem;
+    border-radius: 4px;
+    color: var(--highlight-color);
+    font-family: inherit;
+    font-size: 1rem;
+    transition: border-color var(--transition-fast);
+}
+
+.contactForm input:focus,
+.contactForm textarea:focus {
+    outline: none;
+    border-color: var(--accent-color);
+}
+
+.contactForm button {
+    background: var(--accent-color);
+    color: var(--bg-color);
+    padding: 1rem;
+    border: none;
+    border-radius: 4px;
+    font-weight: 700;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color var(--transition-fast);
+}
+
+.contactForm button:hover {
+    background: #1cc2db;
+}
+
+@media (max-width: 992px) {
+    .contactWrapper {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+    }
+}
+
+.statusBlock {
+    margin-top: 2rem;
+    background: rgba(15, 23, 42, 0.6);
+    border-radius: 8px;
+    border-left: 4px solid var(--accent-color);
+    padding: 1.25rem;
+    font-family: var(--font-mono);
+    animation: slideUp 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.statusHeader {
+    margin-bottom: 0.5rem;
+    opacity: 0.8;
+}
+
+.statusLabel {
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.statusMessage {
+    font-size: 0.9rem;
+    color: var(--highlight-color);
+    margin: 0 !important;
+}
+
+.success {
+    border-color: var(--accent-color);
+    box-shadow: 0 0 15px rgba(34, 211, 238, 0.15);
+}
+
+.success .statusLabel {
+    color: var(--accent-color);
+}
+
+.error {
+    border-color: #ff5f56;
+    box-shadow: 0 0 15px rgba(255, 95, 86, 0.15);
+}
+
+.error .statusLabel {
+    color: #ff5f56;
+}
+
+@keyframes slideUp {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
