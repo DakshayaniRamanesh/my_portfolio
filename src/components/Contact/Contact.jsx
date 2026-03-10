@@ -34,7 +34,10 @@ const Contact = () => {
     return (
         <section id="contact" className={styles.contact}>
             <div className="container">
-                <h2 className={styles.sectionTitle}>Get In Touch</h2>
+                <h2 className={styles.sectionTitle}>
+                    <span className="section-idx">[ 04 ]</span>
+                    Get In Touch
+                </h2>
                 <div className={styles.contactWrapper}>
                     <div className={styles.contactInfo}>
                         <h3>Let's build something together</h3>

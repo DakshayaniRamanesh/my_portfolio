@@ -97,7 +97,10 @@ const Projects = () => {
     return (
         <section id="projects" className={styles.projects}>
             <div className={`container ${styles.projectsContainer}`}>
-                <h2 className={styles.sectionTitle}>Featured Projects</h2>
+                <h2 className={styles.sectionTitle}>
+                    <span className="section-idx">[ 03 ]</span>
+                    Featured Projects
+                </h2>
                 <div className={styles.sliderWrapper}>
                     <button
                         className={`${styles.navButton} ${styles.prevButton}`}
@@ -120,6 +123,11 @@ const Projects = () => {
                         >
                             {projects.map((project, index) => (
                                 <div key={index} className={styles.projectCard}>
+                                    <div className="hud-bracket bracket-tl"></div>
+                                    <div className="hud-bracket bracket-tr"></div>
+                                    <div className="hud-bracket bracket-bl"></div>
+                                    <div className="hud-bracket bracket-br"></div>
+                                    <div className="scanline"></div>
                                     <div className={styles.projectInfo}>
                                         <h3>{project.title}</h3>
                                         <p>{project.description}</p>

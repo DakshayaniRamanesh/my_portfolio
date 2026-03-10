@@ -24,9 +24,9 @@ const Hero = () => {
     };
 
     return (
-        <section className={styles.hero}>
+        <section id="hero" className={styles.hero}>
             <div className={styles.heroContent}>
-                <span className={styles.welcome}>INITIALIZING PORTFOLIO... </span>
+                <div className="hud-label" style={{ marginBottom: '1rem' }}>[ SYSTEM_STATUS: OPERATIONAL ]</div>
                 <h1 className={styles.title}>Dakshayani Ramanesh</h1>
                 <div className={styles.titlecontent}>
                     Computer Engineering Student

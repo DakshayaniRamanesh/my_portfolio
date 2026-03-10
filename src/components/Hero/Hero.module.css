@@ -43,19 +43,19 @@
 }
 
 .title {
-  font-size: clamp(3rem, 8vw, 5.5rem);
-  margin-bottom: 1.5rem;
-  /* Increased spacing */
+  font-family: var(--font-mono);
+  font-size: clamp(2.5rem, 8vw, 5.5rem);;
+  margin-bottom: 2rem;
   color: var(--highlight-color);
-  font-weight: 800;
+  font-weight: 700;
   line-height: 1.1;
-  letter-spacing: 2px;
-  /* Changed from -2px to +2px for spaciousness */
+  letter-spacing: 0.15em;
   background: linear-gradient(135deg, var(--highlight-color) 30%, var(--accent-color) 100%);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
   display: inline-block;
+  text-transform: uppercase;
 }
 
 .titlecontent {

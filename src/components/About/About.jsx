@@ -5,7 +5,10 @@ const About = () => {
     return (
         <section id="about" className={styles.about}>
             <div className="container">
-                <h2 className={styles.sectionTitle}>System.profile</h2>
+                <h2 className={styles.sectionTitle}>
+                    <span className="section-idx">[ 01 ]</span>
+                    System.profile
+                </h2>
                 <div className={styles.terminalContainer}>
                     <div className={styles.terminalHeader}>
                         <div className={styles.dots}>
